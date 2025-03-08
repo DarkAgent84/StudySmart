@@ -21,10 +21,6 @@ StudySmart is a microservices-based collaborative study planner that helps stude
 - Sends push notifications, emails, and SMS reminders.
 - Uses Kafka for event-driven messaging.
 
-### 5️⃣ Resource Management Service (Port: 8085)
-- Manages study materials, shared notes, and file storage.
-- Integrates AWS S3 for secure file storage.
-
 ### API Gateway (Port: 8080)
 - Routes external API requests to the appropriate microservices.
 - Uses Spring Cloud Gateway for dynamic routing.

@@ -1,0 +1,72 @@
+http://localhost:8081/api/auth/register
+{
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXd1c2VyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzQzODMzMTkyLCJleHAiOjE3NDM5MTk1OTJ9.hy8gTalHp7iG9biWfdLA6CjpcYL2UTLJGAcHe2KQedQ",
+    "message": "Registration successful"
+}
+
+http://localhost:8081/api/auth/login
+{
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXd1c2VyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzQzODMzMjgyLCJleHAiOjE3NDM5MTk2ODJ9.YuyPH-s0xkdyXrBnsGdqZ8nrBbpofpxHPf9ioVMYPk0",
+    "message": "Authentication successful"
+}
+
+(GET)http://localhost:8081/api/users
+[
+    {
+        "id": 1,
+        "name": null,
+        "email": "newuser@example.com",
+        "role": "USER"
+    },
+    {
+        "id": 2,
+        "name": null,
+        "email": "test@example.com",
+        "role": "USER"
+    }
+]
+
+(GET)http://localhost:8081/api/users/email/newuser@example.com
+{
+    "id": 1,
+    "name": null,
+    "email": "newuser@example.com",
+    "role": "USER"
+}
+
+(POST)http://localhost:8081/api/users
+Input:
+{
+    "name": "Naman Shah",
+    "email": "naman@example.com",
+    "password": "123456789",
+    "role": "USER"
+}
+
+Output:
+{
+    "id": 3,
+    "name": "Naman Shah",
+    "email": "naman@example.com",
+    "role": "USER"
+}
+
+(PUT)http://localhost:8081/api/users/3
+Input:
+{
+    "name": "Naman",
+    "email": "naman@example.com",
+    "password": "123456789",
+    "role": "USER"
+}
+
+Output:
+{
+    "id": 3,
+    "name": "Naman",
+    "email": "naman@example.com",
+    "role": "USER"
+}
+
+(DELETE)http://localhost:8081/api/users/1
+User with ID 1 has been deleted.

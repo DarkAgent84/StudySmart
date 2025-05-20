@@ -7,19 +7,15 @@ StudySmart is a microservices-based collaborative study planner that helps stude
 
 ### 1️⃣ User Management Service (Port: 8081)
 - Manages user registration, authentication, and roles.
-- Implements JWT authentication for security.
 
 ### 2️⃣ Study Planner Service (Port: 8082)
 - Manages study plans, schedules, and task assignments.
-- Sends email notifications for study reminders.
 
-### 3️⃣ Collaboration & Gamification Service (Port: 8083)
+### 3️⃣ Collaboration Service (Port: 8083)
 - Handles real-time discussions, leaderboards, and study group interactions.
-- Uses WebSockets for real-time communication.
 
-### 4️⃣ Notification Service (Port: 8084)
-- Sends push notifications, emails, and SMS reminders.
-- Uses Kafka for event-driven messaging.
+### 4️⃣ Resource Management Service (Port: 8084)
+- Manages resource sharing, downloading, deleting
 
 ### API Gateway (Port: 8080)
 - Routes external API requests to the appropriate microservices.

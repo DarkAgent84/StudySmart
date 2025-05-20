@@ -42,16 +42,11 @@ StudySmart is a microservices-based collaborative study planner that helps stude
 | POST | `/api/study-plans/create` | Create a new study plan |
 | GET | `/api/study-plans/user/{userId}` | Retrieve study plan for a user |
 
-### Collaboration & Gamification Service
+### Collaboration Service
 | Method | Endpoint | Description |
 |--------|---------|-------------|
 | POST | `/api/collaboration/chat/send` | Send a chat message |
 | GET | `/api/collaboration/leaderboard` | Retrieve leaderboard data |
-
-### Notification Service
-| Method | Endpoint | Description |
-|--------|---------|-------------|
-| POST | `/api/notifications/send/{userId}` | Send a notification to a user |
 
 ### Resource Management Service
 | Method | Endpoint | Description |
